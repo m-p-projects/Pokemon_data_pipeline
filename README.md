@@ -4,6 +4,20 @@ Python ETL pipeline that fetches, transforms, and stores data from the public Po
 ## Project Description
 This project is a Python-based ETL data pipeline. It fetches data from the public [PokéAPI](https://pokeapi.co/), extracts and transforms key attributes for selected Pokémon (such as types, abilities, and base stats), and stores the structured dataset in a clean JSON file.
 
+## How to run script (Git + Python already installed)
+1. Navigate to save location (Desktop)
+```cd %USERPROFILE%\Desktop```
+2. Clone the repository
+Open your terminal or command prompt and clone the repository to your local machine:
+```
+git clone https://github.com/m-p-projects/Pokemon_data_pipeline.git
+```
+3. Navigate to the project directory
+```cd Pokemon_data_pipeline```
+4. Run the script
+```python Pipeline.py```
+
+
 ## Example Output
 [
     {
