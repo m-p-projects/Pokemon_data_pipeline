@@ -1,21 +1,46 @@
 # Pokemon_data_pipeline
-Python ETL pipeline that fetches, transforms, and stores data from the public PokéAPI.
+A Python CLI application that fetches Pokémon data from the [PokéAPI](https://pokeapi.co/), transforms key attributes (stats, abilities, types, height, weight), and appends the structured results into a JSON file (`pokemon_data.json`).
 
-## Project Description
-This project is a Python-based ETL data pipeline. It fetches data from the public [PokéAPI](https://pokeapi.co/), extracts and transforms key attributes for selected Pokémon (such as types, abilities, and base stats), and stores the structured dataset in a clean JSON file.
+## Features
+- **Interactive CLI**: Search for any Pokémon by name.
+- **REST API Integration**: Uses PokéAPI to retrieve up-to-date data.
+- **Data Transformation**: Extracts and formats essential details into clean JSON structures.
+- **Persistent Storage**: Appends newly fetched Pokémon records to `pokemon_data.json`.
 
-## How to run script (Git + Python already installed)
-1. Navigate to save location (Desktop)
-```cd %USERPROFILE%\Desktop```
-2. Clone the repository
-Open your terminal or command prompt and clone the repository to your local machine:
+## Installation & Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/pokemon-data-pipeline.git
+   cd pokemon-data-pipeline
+   ```
+
+2. **Create and activate a virtual environment**:
+   - **Windows**:
+     ```powershell
+     python -m venv .venv
+     .\.venv\Scripts\activate
+     ```
+   - **macOS / Linux**:
+     ```bash
+     python3 -m venv .venv
+     source .venv/bin/activate
+     ```
+
+3. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Run the pipeline script:
+
+```bash
+python Pipeline.py
 ```
-git clone https://github.com/m-p-projects/Pokemon_data_pipeline.git
-```
-3. Navigate to the project directory
-```cd Pokemon_data_pipeline```
-4. Run the script
-```python Pipeline.py```
+
+Follow the prompt to enter a Pokémon name (e.g., `pikachu`, `charizard`) or type `quit` to exit.
 
 
 ## Example Output
